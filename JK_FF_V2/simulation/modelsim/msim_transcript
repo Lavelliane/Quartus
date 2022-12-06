@@ -1,0 +1,77 @@
+# Reading pref.tcl
+# do JK_FF_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/JK_FF_V2 {D:/QUARTUS/JK_FF_V2/JK_FF.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:57:37 on Nov 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/JK_FF_V2" D:/QUARTUS/JK_FF_V2/JK_FF.v 
+# -- Compiling module JK_FF
+# 
+# Top level modules:
+# 	JK_FF
+# End time: 20:57:37 on Nov 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/JK_FF_V2 {D:/QUARTUS/JK_FF_V2/tb_JK_FF.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:57:37 on Nov 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/JK_FF_V2" D:/QUARTUS/JK_FF_V2/tb_JK_FF.v 
+# -- Compiling module tb_JK_FF
+# 
+# Top level modules:
+# 	tb_JK_FF
+# End time: 20:57:37 on Nov 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_JK_FF
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_JK_FF 
+# Start time: 20:57:38 on Nov 22,2022
+# Loading work.tb_JK_FF
+# Loading work.JK_FF
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting Simulation at 0 ns...
+# Time =  0 ns 	 J = 0 	 K = 0 	Reset = 1 	 CLK = 0 	 || 	 Q = 0 	 Q_bar = 1
+# Time =  5 ns 	 J = 0 	 K = 0 	Reset = 1 	 CLK = 1 	 || 	 Q = 0 	 Q_bar = 1
+# Time = 10 ns 	 J = 0 	 K = 0 	Reset = 1 	 CLK = 0 	 || 	 Q = 0 	 Q_bar = 1
+# Time = 15 ns 	 J = 0 	 K = 0 	Reset = 0 	 CLK = 1 	 || 	 Q = 0 	 Q_bar = 1
+# Time = 18 ns 	 J = 1 	 K = 1 	Reset = 0 	 CLK = 1 	 || 	 Q = 0 	 Q_bar = 1
+# Time = 20 ns 	 J = 1 	 K = 1 	Reset = 0 	 CLK = 0 	 || 	 Q = 1 	 Q_bar = 0
+# Time = 25 ns 	 J = 1 	 K = 1 	Reset = 0 	 CLK = 1 	 || 	 Q = 1 	 Q_bar = 0
+# Time = 28 ns 	 J = 0 	 K = 0 	Reset = 0 	 CLK = 1 	 || 	 Q = 1 	 Q_bar = 0
+# Time = 30 ns 	 J = 0 	 K = 0 	Reset = 0 	 CLK = 0 	 || 	 Q = 1 	 Q_bar = 0
+# Time = 35 ns 	 J = 0 	 K = 0 	Reset = 0 	 CLK = 1 	 || 	 Q = 1 	 Q_bar = 0
+# Time = 38 ns 	 J = 1 	 K = 1 	Reset = 0 	 CLK = 1 	 || 	 Q = 1 	 Q_bar = 0
+# Time = 40 ns 	 J = 1 	 K = 1 	Reset = 0 	 CLK = 0 	 || 	 Q = 0 	 Q_bar = 1
+# Time = 45 ns 	 J = 1 	 K = 1 	Reset = 0 	 CLK = 1 	 || 	 Q = 0 	 Q_bar = 1
+# Time = 48 ns 	 J = 1 	 K = 0 	Reset = 0 	 CLK = 1 	 || 	 Q = 0 	 Q_bar = 1
+# Time = 50 ns 	 J = 1 	 K = 0 	Reset = 0 	 CLK = 0 	 || 	 Q = 1 	 Q_bar = 0
+# Time = 55 ns 	 J = 1 	 K = 0 	Reset = 0 	 CLK = 1 	 || 	 Q = 1 	 Q_bar = 0
+# Time = 58 ns 	 J = 0 	 K = 1 	Reset = 0 	 CLK = 1 	 || 	 Q = 1 	 Q_bar = 0
+# Time = 60 ns 	 J = 0 	 K = 1 	Reset = 0 	 CLK = 0 	 || 	 Q = 0 	 Q_bar = 1
+# Time = 65 ns 	 J = 0 	 K = 1 	Reset = 0 	 CLK = 1 	 || 	 Q = 0 	 Q_bar = 1
+# Time = 70 ns 	 J = 0 	 K = 1 	Reset = 0 	 CLK = 0 	 || 	 Q = 0 	 Q_bar = 1
+# Time = 75 ns 	 J = 0 	 K = 1 	Reset = 0 	 CLK = 1 	 || 	 Q = 0 	 Q_bar = 1
+# Time = 78 ns 	 J = 1 	 K = 0 	Reset = 0 	 CLK = 1 	 || 	 Q = 0 	 Q_bar = 1
+# Time = 80 ns 	 J = 1 	 K = 0 	Reset = 0 	 CLK = 0 	 || 	 Q = 1 	 Q_bar = 0
+# Time = 85 ns 	 J = 1 	 K = 0 	Reset = 0 	 CLK = 1 	 || 	 Q = 1 	 Q_bar = 0
+# Finished Simulation at 88 ns...
+# ** Note: $stop    : D:/QUARTUS/JK_FF_V2/tb_JK_FF.v(32)
+#    Time: 88 ns  Iteration: 0  Instance: /tb_JK_FF
+# Break in Module tb_JK_FF at D:/QUARTUS/JK_FF_V2/tb_JK_FF.v line 32
+# End time: 21:27:54 on Nov 22,2022, Elapsed time: 0:30:16
+# Errors: 0, Warnings: 0

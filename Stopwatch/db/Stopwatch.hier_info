@@ -1,0 +1,135 @@
+|Stopwatch
+Clk => Clk.IN3
+nReset => nReset.IN3
+Start => Start.IN1
+S0[0] << BCD_Decoder:D1.SSeg
+S0[1] << BCD_Decoder:D1.SSeg
+S0[2] << BCD_Decoder:D1.SSeg
+S0[3] << BCD_Decoder:D1.SSeg
+S0[4] << BCD_Decoder:D1.SSeg
+S0[5] << BCD_Decoder:D1.SSeg
+S0[6] << BCD_Decoder:D1.SSeg
+S0[7] << BCD_Decoder:D1.SSeg
+S1[0] << BCD_Decoder:D2.SSeg
+S1[1] << BCD_Decoder:D2.SSeg
+S1[2] << BCD_Decoder:D2.SSeg
+S1[3] << BCD_Decoder:D2.SSeg
+S1[4] << BCD_Decoder:D2.SSeg
+S1[5] << BCD_Decoder:D2.SSeg
+S1[6] << BCD_Decoder:D2.SSeg
+S1[7] << BCD_Decoder:D2.SSeg
+S2[0] << BCD_Decoder:D3.SSeg
+S2[1] << BCD_Decoder:D3.SSeg
+S2[2] << BCD_Decoder:D3.SSeg
+S2[3] << BCD_Decoder:D3.SSeg
+S2[4] << BCD_Decoder:D3.SSeg
+S2[5] << BCD_Decoder:D3.SSeg
+S2[6] << BCD_Decoder:D3.SSeg
+S2[7] << BCD_Decoder:D3.SSeg
+
+
+|Stopwatch|BCD_Counter:C1
+Clk => Count_out[0]~reg0.CLK
+Clk => Count_out[1]~reg0.CLK
+Clk => Count_out[2]~reg0.CLK
+Clk => Count_out[3]~reg0.CLK
+nReset => Count_out[0]~reg0.ACLR
+nReset => Count_out[1]~reg0.ACLR
+nReset => Count_out[2]~reg0.ACLR
+nReset => Count_out[3]~reg0.ACLR
+Enable => Count_out[0]~reg0.ENA
+Enable => Count_out[3]~reg0.ENA
+Enable => Count_out[2]~reg0.ENA
+Enable => Count_out[1]~reg0.ENA
+Count_out[0] <= Count_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_out[1] <= Count_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_out[2] <= Count_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_out[3] <= Count_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|BCD_Decoder:D1
+dp => SSeg[0].DATAIN
+count[0] => Decoder0.IN3
+count[1] => Decoder0.IN2
+count[2] => Decoder0.IN1
+count[3] => Decoder0.IN0
+SSeg[0] <= dp.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[6] <= num.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[7] <= num.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|BCD_Counter:C2
+Clk => Count_out[0]~reg0.CLK
+Clk => Count_out[1]~reg0.CLK
+Clk => Count_out[2]~reg0.CLK
+Clk => Count_out[3]~reg0.CLK
+nReset => Count_out[0]~reg0.ACLR
+nReset => Count_out[1]~reg0.ACLR
+nReset => Count_out[2]~reg0.ACLR
+nReset => Count_out[3]~reg0.ACLR
+Enable => Count_out[0]~reg0.ENA
+Enable => Count_out[3]~reg0.ENA
+Enable => Count_out[2]~reg0.ENA
+Enable => Count_out[1]~reg0.ENA
+Count_out[0] <= Count_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_out[1] <= Count_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_out[2] <= Count_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_out[3] <= Count_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|BCD_Decoder:D2
+dp => SSeg[0].DATAIN
+count[0] => Decoder0.IN3
+count[1] => Decoder0.IN2
+count[2] => Decoder0.IN1
+count[3] => Decoder0.IN0
+SSeg[0] <= dp.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[6] <= num.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[7] <= num.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|BCD_Counter:C3
+Clk => Count_out[0]~reg0.CLK
+Clk => Count_out[1]~reg0.CLK
+Clk => Count_out[2]~reg0.CLK
+Clk => Count_out[3]~reg0.CLK
+nReset => Count_out[0]~reg0.ACLR
+nReset => Count_out[1]~reg0.ACLR
+nReset => Count_out[2]~reg0.ACLR
+nReset => Count_out[3]~reg0.ACLR
+Enable => Count_out[0]~reg0.ENA
+Enable => Count_out[3]~reg0.ENA
+Enable => Count_out[2]~reg0.ENA
+Enable => Count_out[1]~reg0.ENA
+Count_out[0] <= Count_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_out[1] <= Count_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_out[2] <= Count_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_out[3] <= Count_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Stopwatch|BCD_Decoder:D3
+dp => SSeg[0].DATAIN
+count[0] => Decoder0.IN3
+count[1] => Decoder0.IN2
+count[2] => Decoder0.IN1
+count[3] => Decoder0.IN0
+SSeg[0] <= dp.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[6] <= num.DB_MAX_OUTPUT_PORT_TYPE
+SSeg[7] <= num.DB_MAX_OUTPUT_PORT_TYPE
+
+

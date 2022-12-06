@@ -1,0 +1,10 @@
+|Problem12
+W => G4.IN0
+W => G6.IN0
+X => G6.IN1
+X => G4.IN1
+Y => G2.IN0
+Z => G2.IN1
+D <= G8.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,19 @@
+|Decoder24
+en => D1.IN0
+en => D2.IN0
+en => D3.IN0
+en => D4.IN0
+a[0] => D2.IN1
+a[0] => D4.IN1
+a[0] => D3.IN1
+a[0] => D1.IN1
+a[1] => D3.IN2
+a[1] => D4.IN2
+a[1] => D2.IN2
+a[1] => D1.IN2
+d[0] << D1.DB_MAX_OUTPUT_PORT_TYPE
+d[1] << D2.DB_MAX_OUTPUT_PORT_TYPE
+d[2] << D3.DB_MAX_OUTPUT_PORT_TYPE
+d[3] << D4.DB_MAX_OUTPUT_PORT_TYPE
+
+

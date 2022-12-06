@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS/Decoder24/simulation/modelsim
+vDecoder24
+!s110 1664257819
+!i10b 1
+!s100 IWelg[aT549QFcOo9?IZn1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I7HS9QKnF65nVajMb2M4Q<0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1664255055
+8D:/QUARTUS/Decoder24/Decoder24.v
+FD:/QUARTUS/Decoder24/Decoder24.v
+!i122 0
+L0 7 15
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1664257818.000000
+!s107 D:/QUARTUS/Decoder24/Decoder24.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/Decoder24|D:/QUARTUS/Decoder24/Decoder24.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+D:/QUARTUS/Decoder24
+Z6 tCvgOpt 0
+n@decoder24
+vtb_Decoder24
+!s110 1664257823
+!i10b 1
+!s100 iKOMnSCSfm9bJRPBFT`723
+R1
+I?STBXPNAF?bWR<7EP9nH32
+R2
+R0
+w1664254978
+8D:/QUARTUS/Decoder24/tb_Decoder24.v
+FD:/QUARTUS/Decoder24/tb_Decoder24.v
+!i122 1
+L0 9 22
+R3
+r1
+!s85 0
+31
+!s108 1664257823.000000
+!s107 D:/QUARTUS/Decoder24/tb_Decoder24.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/Decoder24|D:/QUARTUS/Decoder24/tb_Decoder24.v|
+!i113 1
+R4
+R5
+R6
+ntb_@decoder24

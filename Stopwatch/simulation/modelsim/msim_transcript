@@ -1,0 +1,118 @@
+# Reading pref.tcl
+# do Stopwatch_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/Stopwatch {D:/QUARTUS/Stopwatch/Stopwatch.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:35:44 on Nov 30,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/Stopwatch" D:/QUARTUS/Stopwatch/Stopwatch.v 
+# -- Compiling module Stopwatch
+# 
+# Top level modules:
+# 	Stopwatch
+# End time: 22:35:44 on Nov 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/Stopwatch {D:/QUARTUS/Stopwatch/BCD_Counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:35:44 on Nov 30,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/Stopwatch" D:/QUARTUS/Stopwatch/BCD_Counter.v 
+# -- Compiling module BCD_Counter
+# 
+# Top level modules:
+# 	BCD_Counter
+# End time: 22:35:44 on Nov 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/Stopwatch {D:/QUARTUS/Stopwatch/BCD_Decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:35:44 on Nov 30,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/Stopwatch" D:/QUARTUS/Stopwatch/BCD_Decoder.v 
+# -- Compiling module BCD_Decoder
+# 
+# Top level modules:
+# 	BCD_Decoder
+# End time: 22:35:45 on Nov 30,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/Stopwatch {D:/QUARTUS/Stopwatch/tb_Stopwatch.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:35:45 on Nov 30,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/Stopwatch" D:/QUARTUS/Stopwatch/tb_Stopwatch.v 
+# -- Compiling module tb_Stopwatch
+# 
+# Top level modules:
+# 	tb_Stopwatch
+# End time: 22:35:45 on Nov 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_Stopwatch
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_Stopwatch 
+# Start time: 22:35:45 on Nov 30,2022
+# Loading work.tb_Stopwatch
+# Loading work.Stopwatch
+# Loading work.BCD_Counter
+# Loading work.BCD_Decoder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting Simulation at 0 ns...
+# Time =  0 ns 	nReset = 0 	 Start = 0 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time =  5 ns 	nReset = 0 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 10 ns 	nReset = 0 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 15 ns 	nReset = 0 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 20 ns 	nReset = 0 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 25 ns 	nReset = 0 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 30 ns 	nReset = 0 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 35 ns 	nReset = 0 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 40 ns 	nReset = 0 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 45 ns 	nReset = 0 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 50 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 55 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 60 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 65 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 70 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 75 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 80 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 85 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 90 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 95 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 100 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 105 ns 	nReset = 1 	 Start = 0 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 110 ns 	nReset = 1 	 Start = 0 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 115 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 120 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 125 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 130 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 135 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 140 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 145 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 150 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 155 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 160 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 165 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 170 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 175 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 180 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 185 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 190 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 195 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 200 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 205 ns 	nReset = 1 	 Start = 1 	 CLK = 1 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Time = 210 ns 	nReset = 1 	 Start = 1 	 CLK = 0 	 || 	 S0 = 00000010 	 S1 = 00000011 	 S2 = 00000010
+# Finished Simulation at 215 ns...
+# ** Note: $stop    : D:/QUARTUS/Stopwatch/tb_Stopwatch.v(36)
+#    Time: 215 ns  Iteration: 0  Instance: /tb_Stopwatch
+# Break in Module tb_Stopwatch at D:/QUARTUS/Stopwatch/tb_Stopwatch.v line 36
+# End time: 23:39:11 on Nov 30,2022, Elapsed time: 1:03:26
+# Errors: 0, Warnings: 0

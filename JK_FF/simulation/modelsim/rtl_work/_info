@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS/JK_FF/simulation/modelsim
+vJK_Flip_Flop
+!s110 1669120845
+!i10b 1
+!s100 oCT7SI1`flc=Q1G?7HZm=1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[;CV2`Cc6edKcNM]JV]g42
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1669119509
+8D:/QUARTUS/JK_FF/JK_Flip_Flop.v
+FD:/QUARTUS/JK_FF/JK_Flip_Flop.v
+!i122 0
+L0 4 53
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1669120845.000000
+!s107 D:/QUARTUS/JK_FF/JK_Flip_Flop.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/JK_FF|D:/QUARTUS/JK_FF/JK_Flip_Flop.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/QUARTUS/JK_FF
+Z7 tCvgOpt 0
+n@j@k_@flip_@flop
+vtb_JK_Flip_Flop
+!s110 1669120846
+!i10b 1
+!s100 =WiWT9Jn_J:[QXbS65VmF0
+R1
+IE6nlBD7i0[<DRISJ2``<12
+R2
+R0
+w1669120836
+8D:/QUARTUS/JK_FF/tb_JK_Flip_Flop.v
+FD:/QUARTUS/JK_FF/tb_JK_Flip_Flop.v
+!i122 1
+L0 5 35
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/QUARTUS/JK_FF/tb_JK_Flip_Flop.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/JK_FF|D:/QUARTUS/JK_FF/tb_JK_Flip_Flop.v|
+!i113 1
+R5
+R6
+R7
+ntb_@j@k_@flip_@flop

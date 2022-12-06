@@ -1,0 +1,51 @@
+# Reading pref.tcl
+# do Decoder24_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/Decoder24 {D:/QUARTUS/Decoder24/Decoder24.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:50:18 on Sep 27,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/Decoder24" D:/QUARTUS/Decoder24/Decoder24.v 
+# -- Compiling module Decoder24
+# 
+# Top level modules:
+# 	Decoder24
+# End time: 13:50:19 on Sep 27,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/Decoder24 {D:/QUARTUS/Decoder24/tb_Decoder24.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:50:23 on Sep 27,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/Decoder24" D:/QUARTUS/Decoder24/tb_Decoder24.v 
+# -- Compiling module tb_Decoder24
+# 
+# Top level modules:
+# 	tb_Decoder24
+# End time: 13:50:23 on Sep 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_Decoder24
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_Decoder24 
+# Start time: 13:50:23 on Sep 27,2022
+# Loading work.tb_Decoder24
+# Loading work.Decoder24
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : D:/QUARTUS/Decoder24/tb_Decoder24.v(27)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_Decoder24
+# Break in Module tb_Decoder24 at D:/QUARTUS/Decoder24/tb_Decoder24.v line 27
+# End time: 14:01:55 on Sep 27,2022, Elapsed time: 0:11:32
+# Errors: 0, Warnings: 0

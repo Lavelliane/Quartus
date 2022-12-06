@@ -1,0 +1,46 @@
+`timescale 1 ns / 1 ps
+module tb_Stopwatch();
+	
+	// input as reg; outputs as wire
+	reg 			Clk, nReset, Start;
+	wire [7:0] 	S0, S1, S2;
+	
+	// instantiate UUT
+	Stopwatch_Top UUT(.Clk(Clk), .nReset(nReset), .Start(Start), .S0(S0), .S1(S1), .S2(S2));
+	
+	// set initial value for clock
+	initial 
+		Clk = 1'b0;
+
+	always
+		#5		Clk = ~ Clk;
+		
+
+	initial 
+		begin
+			nReset = 1'b0;		#50	
+			nReset = 1'b1;		
+		end
+	
+	//generate stimulii
+	initial 
+		begin
+			$display("Starting Simulation at %0d ns...",$time);
+			
+			Start = 1'b0;	#5	
+			Start = 1'b1;	#1000
+			Start = 1'b0;	#10	
+			Start = 1'b1;	#1000
+
+			
+			$display("Finished Simulation at %0d ns...",$time);
+			$stop;
+	end
+	
+	// print
+	initial begin
+		$monitor("Time = %2d ns \tnReset = %b \t Start = %b \t CLK = %b \t || \t S0 = %8b \t S1 = %8b \t S2 = %8b", 
+			$time, nReset, Start, Clk, S0, S1, S2);
+	end
+		
+endmodule		

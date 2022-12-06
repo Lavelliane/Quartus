@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS/MUX_Nbit/simulation/modelsim
+vMUX_Nbit
+Z1 !s110 1665425668
+!i10b 1
+!s100 3BlC:Q@eAnP0XB@Lj=?fL1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IZDOe4kOL=W<R^9mQ?bN7f0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1665424245
+8D:/QUARTUS/MUX_Nbit/MUX_Nbit.v
+FD:/QUARTUS/MUX_Nbit/MUX_Nbit.v
+!i122 0
+L0 4 12
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1665425667.000000
+!s107 D:/QUARTUS/MUX_Nbit/MUX_Nbit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/MUX_Nbit|D:/QUARTUS/MUX_Nbit/MUX_Nbit.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/QUARTUS/MUX_Nbit
+Z7 tCvgOpt 0
+n@m@u@x_@nbit
+vtb_MUX_Nbit
+R1
+!i10b 1
+!s100 ARaM6VZUSF1ScJZMN4z_51
+R2
+IzD5O3Aj::Cc1R0Nmn^mee1
+R3
+R0
+w1665425585
+8D:/QUARTUS/MUX_Nbit/tb_MUX_Nbit.v
+FD:/QUARTUS/MUX_Nbit/tb_MUX_Nbit.v
+!i122 1
+L0 5 42
+R4
+r1
+!s85 0
+31
+!s108 1665425668.000000
+!s107 D:/QUARTUS/MUX_Nbit/tb_MUX_Nbit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/MUX_Nbit|D:/QUARTUS/MUX_Nbit/tb_MUX_Nbit.v|
+!i113 1
+R5
+R6
+R7
+ntb_@m@u@x_@nbit

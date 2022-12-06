@@ -1,0 +1,86 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS/Decoder38/simulation/modelsim
+vDecoder24
+Z1 !s110 1664256539
+!i10b 1
+!s100 c:b42U3i^Lz13lz;i1lWd3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IJe9SaJB8GJ;EAOceI4_J_2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1664211283
+8D:/QUARTUS/Decoder38/Decoder24.v
+FD:/QUARTUS/Decoder38/Decoder24.v
+!i122 1
+L0 1 15
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1664256539.000000
+!s107 D:/QUARTUS/Decoder38/Decoder24.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/Decoder38|D:/QUARTUS/Decoder38/Decoder24.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+D:/QUARTUS/Decoder38
+Z8 tCvgOpt 0
+n@decoder24
+vDecoder38
+R1
+!i10b 1
+!s100 [=QE1FUBjQRAfDDFDdniY0
+R2
+Ik:d0BTk_EHHbPNQm^klzZ2
+R3
+R0
+w1664255882
+8D:/QUARTUS/Decoder38/Decoder38.v
+FD:/QUARTUS/Decoder38/Decoder38.v
+!i122 0
+L0 7 15
+R4
+r1
+!s85 0
+31
+!s108 1664256538.000000
+!s107 D:/QUARTUS/Decoder38/Decoder38.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/Decoder38|D:/QUARTUS/Decoder38/Decoder38.v|
+!i113 1
+R6
+R7
+R8
+n@decoder38
+vtb_Decoder38
+R1
+!i10b 1
+!s100 EXI_=;Tl?<TNb;[1mz8G92
+R2
+Io]B_eLO]S2g4;OmN4Okjd0
+R3
+R0
+w1664256519
+8D:/QUARTUS/Decoder38/tb_Decoder38.v
+FD:/QUARTUS/Decoder38/tb_Decoder38.v
+!i122 2
+L0 8 23
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/QUARTUS/Decoder38/tb_Decoder38.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/Decoder38|D:/QUARTUS/Decoder38/tb_Decoder38.v|
+!i113 1
+R6
+R7
+R8
+ntb_@decoder38

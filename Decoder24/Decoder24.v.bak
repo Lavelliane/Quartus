@@ -1,0 +1,13 @@
+module Decoder24 (a0, a1, d);
+
+	input a0, a1;
+	output [3:0] d;
+	
+	wire a0w, a1w;
+	
+	not N1 (a0w, a0);
+	not N2 (a1w, a1);
+	and D1 (d0, a0w, a1w);
+	
+
+endmodule

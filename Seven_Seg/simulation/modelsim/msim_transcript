@@ -1,0 +1,69 @@
+# Reading pref.tcl
+# do Seven_Seg_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/Seven_Seg {D:/QUARTUS/Seven_Seg/Seven_Seg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:31:42 on Oct 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/Seven_Seg" D:/QUARTUS/Seven_Seg/Seven_Seg.v 
+# -- Compiling module Seven_Seg
+# 
+# Top level modules:
+# 	Seven_Seg
+# End time: 17:31:42 on Oct 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/Seven_Seg {D:/QUARTUS/Seven_Seg/tb_Seven_Seg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:31:42 on Oct 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/Seven_Seg" D:/QUARTUS/Seven_Seg/tb_Seven_Seg.v 
+# -- Compiling module tb_Seven_Seg
+# 
+# Top level modules:
+# 	tb_Seven_Seg
+# End time: 17:31:42 on Oct 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_Seven_Seg
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_Seven_Seg 
+# Start time: 17:31:42 on Oct 25,2022
+# Loading work.tb_Seven_Seg
+# Loading work.Seven_Seg
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting simulation at 0 ns...
+# Time =  0 ns	 A =  0	 DP = 0	 SSEG Display = 01000000
+# Time = 10 ns	 A =  1	 DP = 0	 SSEG Display = 01111001
+# Time = 20 ns	 A =  2	 DP = 0	 SSEG Display = 00100100
+# Time = 30 ns	 A =  3	 DP = 0	 SSEG Display = 00110000
+# Time = 40 ns	 A =  4	 DP = 0	 SSEG Display = 00011001
+# Time = 50 ns	 A =  5	 DP = 0	 SSEG Display = 00010010
+# Time = 60 ns	 A =  6	 DP = 0	 SSEG Display = 00000010
+# Time = 70 ns	 A =  7	 DP = 1	 SSEG Display = 11111000
+# Time = 80 ns	 A =  8	 DP = 1	 SSEG Display = 10000000
+# Time = 90 ns	 A =  9	 DP = 1	 SSEG Display = 10011000
+# Time = 100 ns	 A = 10	 DP = 1	 SSEG Display = 10001000
+# Time = 110 ns	 A = 11	 DP = 1	 SSEG Display = 10000011
+# Time = 120 ns	 A = 12	 DP = 1	 SSEG Display = 11000110
+# Time = 130 ns	 A = 13	 DP = 1	 SSEG Display = 10100001
+# Time = 140 ns	 A = 14	 DP = 1	 SSEG Display = 10000110
+# Time = 150 ns	 A = 15	 DP = 0	 SSEG Display = 00001110
+# Finished simulation at 160 ns...
+# ** Note: $stop    : D:/QUARTUS/Seven_Seg/tb_Seven_Seg.v(33)
+#    Time: 160 ns  Iteration: 0  Instance: /tb_Seven_Seg
+# Break in Module tb_Seven_Seg at D:/QUARTUS/Seven_Seg/tb_Seven_Seg.v line 33
+# End time: 17:33:00 on Oct 25,2022, Elapsed time: 0:01:18
+# Errors: 0, Warnings: 0

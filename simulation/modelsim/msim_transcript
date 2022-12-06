@@ -1,0 +1,66 @@
+# Reading pref.tcl
+# do BlueEyesWhiteDragon_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS {D:/QUARTUS/BlueEyesWhiteDragon.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:31:31 on Dec 07,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS" D:/QUARTUS/BlueEyesWhiteDragon.v 
+# -- Compiling module BlueEyesWhiteDragon
+# 
+# Top level modules:
+# 	BlueEyesWhiteDragon
+# End time: 01:31:31 on Dec 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS {D:/QUARTUS/tb_BlueEyesWhiteDragon.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:31:32 on Dec 07,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS" D:/QUARTUS/tb_BlueEyesWhiteDragon.v 
+# -- Compiling module tb_BlueEyesWhiteDragon
+# 
+# Top level modules:
+# 	tb_BlueEyesWhiteDragon
+# End time: 01:31:32 on Dec 07,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_BlueEyesWhiteDragon
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_BlueEyesWhiteDragon 
+# Start time: 01:31:32 on Dec 07,2022
+# Loading work.tb_BlueEyesWhiteDragon
+# Loading work.BlueEyesWhiteDragon
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting Simulation at 0 ns...
+# Time =  0 ns 	 En = 0 Up = 0 	 Count = 2
+# Time = 18 ns 	 En = 1 Up = 1 	 Count = 2
+# Time = 20 ns 	 En = 1 Up = 1 	 Count = 3
+# Time = 30 ns 	 En = 1 Up = 1 	 Count = 4
+# Time = 40 ns 	 En = 1 Up = 1 	 Count = 5
+# Time = 50 ns 	 En = 1 Up = 1 	 Count = 2
+# Time = 60 ns 	 En = 1 Up = 1 	 Count = 3
+# Time = 68 ns 	 En = 1 Up = 0 	 Count = 3
+# Time = 70 ns 	 En = 1 Up = 0 	 Count = 2
+# Time = 80 ns 	 En = 1 Up = 0 	 Count = 5
+# Time = 90 ns 	 En = 1 Up = 0 	 Count = 4
+# Time = 100 ns 	 En = 1 Up = 0 	 Count = 3
+# Time = 110 ns 	 En = 1 Up = 0 	 Count = 2
+# Finished Simulation at 118 ns...
+# ** Note: $stop    : D:/QUARTUS/tb_BlueEyesWhiteDragon.v(36)
+#    Time: 118 ns  Iteration: 0  Instance: /tb_BlueEyesWhiteDragon
+# Break in Module tb_BlueEyesWhiteDragon at D:/QUARTUS/tb_BlueEyesWhiteDragon.v line 36
+# End time: 01:32:33 on Dec 07,2022, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 0

@@ -1,0 +1,7 @@
+module BCD_Counter(Clk, nReset, Enable);
+
+
+
+
+
+endmodule

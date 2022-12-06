@@ -1,0 +1,55 @@
+|Decoder38
+en => A1.IN0
+en => A2.IN0
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => A2.IN1
+a[2] => A1.IN1
+d[0] << Decoder24:D1.port2
+d[1] << Decoder24:D1.port2
+d[2] << Decoder24:D1.port2
+d[3] << Decoder24:D1.port2
+d[4] << Decoder24:D2.port2
+d[5] << Decoder24:D2.port2
+d[6] << Decoder24:D2.port2
+d[7] << Decoder24:D2.port2
+
+
+|Decoder38|Decoder24:D1
+en => D1.IN0
+en => D2.IN0
+en => D3.IN0
+en => D4.IN0
+a[0] => D2.IN1
+a[0] => D4.IN1
+a[0] => D3.IN1
+a[0] => D1.IN1
+a[1] => D3.IN2
+a[1] => D4.IN2
+a[1] => D2.IN2
+a[1] => D1.IN2
+d[0] <= D1.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= D2.DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= D3.DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= D4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Decoder38|Decoder24:D2
+en => D1.IN0
+en => D2.IN0
+en => D3.IN0
+en => D4.IN0
+a[0] => D2.IN1
+a[0] => D4.IN1
+a[0] => D3.IN1
+a[0] => D1.IN1
+a[1] => D3.IN2
+a[1] => D4.IN2
+a[1] => D2.IN2
+a[1] => D1.IN2
+d[0] <= D1.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= D2.DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= D3.DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= D4.DB_MAX_OUTPUT_PORT_TYPE
+
+

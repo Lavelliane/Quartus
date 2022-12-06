@@ -1,0 +1,10 @@
+module Stopwatch(Clk, nReset, Start, S0, S1, S2);
+
+input wire Clk, nReset, Start;
+output reg [7:0]S1, S2, S3;
+
+
+
+
+
+endmodule

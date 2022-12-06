@@ -1,0 +1,60 @@
+# Reading pref.tcl
+# do MUX_Nbit_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/MUX_Nbit {D:/QUARTUS/MUX_Nbit/MUX_Nbit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:14:27 on Oct 11,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/MUX_Nbit" D:/QUARTUS/MUX_Nbit/MUX_Nbit.v 
+# -- Compiling module MUX_Nbit
+# 
+# Top level modules:
+# 	MUX_Nbit
+# End time: 02:14:28 on Oct 11,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/MUX_Nbit {D:/QUARTUS/MUX_Nbit/tb_MUX_Nbit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:14:28 on Oct 11,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/MUX_Nbit" D:/QUARTUS/MUX_Nbit/tb_MUX_Nbit.v 
+# -- Compiling module tb_MUX_Nbit
+# 
+# Top level modules:
+# 	tb_MUX_Nbit
+# End time: 02:14:28 on Oct 11,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_MUX_Nbit
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_MUX_Nbit 
+# Start time: 02:14:28 on Oct 11,2022
+# Loading work.tb_MUX_Nbit
+# Loading work.MUX_Nbit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting simulation at 0 ns...
+# Time =  0 ns	 S = 00	 A = 0010	 B = xxxx	 C = xxxx	 D = xxxx	 Y = 0010	
+# Time = 10 ns	 S = 00	 A = 0010	 B = 0110	 C = xxxx	 D = xxxx	 Y = 0010	
+# Time = 20 ns	 S = 00	 A = 0010	 B = 0110	 C = 1010	 D = xxxx	 Y = 0010	
+# Time = 30 ns	 S = 00	 A = 0010	 B = 0110	 C = 1010	 D = 0011	 Y = 0010	
+# Time = 40 ns	 S = 01	 A = 0010	 B = 0110	 C = 1010	 D = 0011	 Y = 0110	
+# Time = 80 ns	 S = 10	 A = 0010	 B = 0110	 C = 1010	 D = 0011	 Y = 1010	
+# Time = 120 ns	 S = 11	 A = 0010	 B = 0110	 C = 1010	 D = 0011	 Y = 0011	
+# Finished simulation at 160 ns...
+# ** Note: $stop    : D:/QUARTUS/MUX_Nbit/tb_MUX_Nbit.v(39)
+#    Time: 160 ns  Iteration: 0  Instance: /tb_MUX_Nbit
+# Break in Module tb_MUX_Nbit at D:/QUARTUS/MUX_Nbit/tb_MUX_Nbit.v line 39
+# End time: 02:18:21 on Oct 11,2022, Elapsed time: 0:03:53
+# Errors: 0, Warnings: 0

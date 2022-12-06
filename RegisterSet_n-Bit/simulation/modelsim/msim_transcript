@@ -1,0 +1,105 @@
+# Reading pref.tcl
+# do RegisterSet_n-Bit_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/RegisterSet_n-Bit {D:/QUARTUS/RegisterSet_n-Bit/RegisterSet_nBit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:48:54 on Nov 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/RegisterSet_n-Bit" D:/QUARTUS/RegisterSet_n-Bit/RegisterSet_nBit.v 
+# -- Compiling module RegisterSet_nBit
+# 
+# Top level modules:
+# 	RegisterSet_nBit
+# End time: 21:48:54 on Nov 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/RegisterSet_n-Bit {D:/QUARTUS/RegisterSet_n-Bit/tb_RegisterSet_Nbit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:48:54 on Nov 22,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/RegisterSet_n-Bit" D:/QUARTUS/RegisterSet_n-Bit/tb_RegisterSet_Nbit.v 
+# -- Compiling module tb_RegisterSet_Nbit
+# 
+# Top level modules:
+# 	tb_RegisterSet_Nbit
+# End time: 21:48:54 on Nov 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_RegisterSet_Nbit
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_RegisterSet_Nbit 
+# Start time: 21:48:55 on Nov 22,2022
+# Loading work.tb_RegisterSet_Nbit
+# Loading work.RegisterSet_nBit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting simulation at 0 ns...
+# Time =  0 	 Clk = 0 	 nReset = 0 	 RW = 0 	 Enable = 1 	 Address = 010 	 Data_in = xxxxxxxx 	 Data_out= xxxxxxxx 
+# Time =  5 	 Clk = 1 	 nReset = 0 	 RW = 0 	 Enable = 1 	 Address = 010 	 Data_in = xxxxxxxx 	 Data_out= xxxxxxxx 
+# Time = 10 	 Clk = 0 	 nReset = 0 	 RW = 0 	 Enable = 1 	 Address = 010 	 Data_in = xxxxxxxx 	 Data_out= xxxxxxxx 
+# Time = 15 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 010 	 Data_in = xxxxxxxx 	 Data_out= xxxxxxxx 
+# Time = 18 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 000 	 Data_in = 00000001 	 Data_out= xxxxxxxx 
+# Time = 20 	 Clk = 0 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 000 	 Data_in = 00000001 	 Data_out= zzzzzzzz 
+# Time = 25 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 000 	 Data_in = 00000001 	 Data_out= zzzzzzzz 
+# Time = 28 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 001 	 Data_in = 00000010 	 Data_out= zzzzzzzz 
+# Time = 30 	 Clk = 0 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 001 	 Data_in = 00000010 	 Data_out= zzzzzzzz 
+# Time = 35 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 001 	 Data_in = 00000010 	 Data_out= zzzzzzzz 
+# Time = 38 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 010 	 Data_in = 00000011 	 Data_out= zzzzzzzz 
+# Time = 40 	 Clk = 0 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 010 	 Data_in = 00000011 	 Data_out= zzzzzzzz 
+# Time = 45 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 010 	 Data_in = 00000011 	 Data_out= zzzzzzzz 
+# Time = 48 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 011 	 Data_in = 00000100 	 Data_out= zzzzzzzz 
+# Time = 50 	 Clk = 0 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 011 	 Data_in = 00000100 	 Data_out= zzzzzzzz 
+# Time = 55 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 011 	 Data_in = 00000100 	 Data_out= zzzzzzzz 
+# Time = 58 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 100 	 Data_in = 00000101 	 Data_out= zzzzzzzz 
+# Time = 60 	 Clk = 0 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 100 	 Data_in = 00000101 	 Data_out= zzzzzzzz 
+# Time = 65 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 100 	 Data_in = 00000101 	 Data_out= zzzzzzzz 
+# Time = 68 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 101 	 Data_in = 00000110 	 Data_out= zzzzzzzz 
+# Time = 70 	 Clk = 0 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 101 	 Data_in = 00000110 	 Data_out= zzzzzzzz 
+# Time = 75 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 101 	 Data_in = 00000110 	 Data_out= zzzzzzzz 
+# Time = 78 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 110 	 Data_in = 00000111 	 Data_out= zzzzzzzz 
+# Time = 80 	 Clk = 0 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 110 	 Data_in = 00000111 	 Data_out= zzzzzzzz 
+# Time = 85 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 110 	 Data_in = 00000111 	 Data_out= zzzzzzzz 
+# Time = 88 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 111 	 Data_in = 00001111 	 Data_out= zzzzzzzz 
+# Time = 90 	 Clk = 0 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 111 	 Data_in = 00001111 	 Data_out= zzzzzzzz 
+# Time = 95 	 Clk = 1 	 nReset = 1 	 RW = 1 	 Enable = 1 	 Address = 111 	 Data_in = 00001111 	 Data_out= zzzzzzzz 
+# Time = 98 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 000 	 Data_in = xxxxxxxx 	 Data_out= zzzzzzzz 
+# Time = 100 	 Clk = 0 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 000 	 Data_in = xxxxxxxx 	 Data_out= 00000001 
+# Time = 105 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 000 	 Data_in = xxxxxxxx 	 Data_out= 00000001 
+# Time = 108 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 001 	 Data_in = xxxxxxxx 	 Data_out= 00000001 
+# Time = 110 	 Clk = 0 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 001 	 Data_in = xxxxxxxx 	 Data_out= 00000010 
+# Time = 115 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 001 	 Data_in = xxxxxxxx 	 Data_out= 00000010 
+# Time = 118 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 010 	 Data_in = xxxxxxxx 	 Data_out= 00000010 
+# Time = 120 	 Clk = 0 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 010 	 Data_in = xxxxxxxx 	 Data_out= 00000011 
+# Time = 125 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 010 	 Data_in = xxxxxxxx 	 Data_out= 00000011 
+# Time = 128 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 011 	 Data_in = xxxxxxxx 	 Data_out= 00000011 
+# Time = 130 	 Clk = 0 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 011 	 Data_in = xxxxxxxx 	 Data_out= 00000100 
+# Time = 135 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 011 	 Data_in = xxxxxxxx 	 Data_out= 00000100 
+# Time = 138 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 100 	 Data_in = xxxxxxxx 	 Data_out= 00000100 
+# Time = 140 	 Clk = 0 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 100 	 Data_in = xxxxxxxx 	 Data_out= 00000101 
+# Time = 145 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 100 	 Data_in = xxxxxxxx 	 Data_out= 00000101 
+# Time = 148 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 101 	 Data_in = xxxxxxxx 	 Data_out= 00000101 
+# Time = 150 	 Clk = 0 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 101 	 Data_in = xxxxxxxx 	 Data_out= 00000110 
+# Time = 155 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 101 	 Data_in = xxxxxxxx 	 Data_out= 00000110 
+# Time = 158 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 110 	 Data_in = xxxxxxxx 	 Data_out= 00000110 
+# Time = 160 	 Clk = 0 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 110 	 Data_in = xxxxxxxx 	 Data_out= 00000111 
+# Time = 165 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 110 	 Data_in = xxxxxxxx 	 Data_out= 00000111 
+# Time = 168 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 111 	 Data_in = xxxxxxxx 	 Data_out= 00000111 
+# Time = 170 	 Clk = 0 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 111 	 Data_in = xxxxxxxx 	 Data_out= 00001111 
+# Time = 175 	 Clk = 1 	 nReset = 1 	 RW = 0 	 Enable = 1 	 Address = 111 	 Data_in = xxxxxxxx 	 Data_out= 00001111 
+# Finished simulation at 178 ns.
+# ** Note: $stop    : D:/QUARTUS/RegisterSet_n-Bit/tb_RegisterSet_Nbit.v(50)
+#    Time: 178 ns  Iteration: 0  Instance: /tb_RegisterSet_Nbit
+# Break in Module tb_RegisterSet_Nbit at D:/QUARTUS/RegisterSet_n-Bit/tb_RegisterSet_Nbit.v line 50
+# End time: 21:51:02 on Nov 22,2022, Elapsed time: 0:02:07
+# Errors: 0, Warnings: 0

@@ -1,0 +1,47 @@
+`timescale 1 ns / 1 ps
+module tb_Spinning_Disk();
+	
+	// input as reg; outputs as wire
+	reg 			Clk, nReset, Start;
+	wire [7:0] 	SSeg;
+	
+	// instantiate UUT
+	Spinning_Disk UUT(.Clk(Clk), .nReset(nReset), .Start(Start), .SSeg(SSeg));
+	
+	// set initial value for clock
+	initial 
+		Clk = 1'b0;
+	
+	// clock generator
+	always
+		#5		Clk = ~ Clk;
+		
+	// set reset value
+	initial 
+		begin
+			nReset = 1'b0;		#10
+			nReset = 1'b1;		
+		end
+	
+	//generate stimulii
+	initial 
+		begin
+			$display("Starting Simulation at %0d ns...",$time);
+			
+			Start = 1'b0;	#13
+			Start = 1'b1;	#30
+			Start = 1'b0;	#15
+			Start = 1'b1;	#30
+
+			
+			$display("Finished Simulation at %0d ns...",$time);
+			$stop;
+		end
+	
+	// print
+	initial 
+		begin
+			$monitor("nReset = %b \t Start = %b \t CLK = %b \t SSeg = %8b", nReset, Start, Clk, SSeg);
+		end
+		
+endmodule

@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS/Stopwatch/simulation/modelsim
+vBCD_Counter
+Z1 !s110 1669818944
+!i10b 1
+!s100 Q`5?RY@[fT2KXoK5`78Sa1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IcgMO>_IG@_Wc_NM]BhgX`3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1669818393
+8D:/QUARTUS/Stopwatch/BCD_Counter.v
+FD:/QUARTUS/Stopwatch/BCD_Counter.v
+!i122 1
+Z4 L0 4 22
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1669818944.000000
+!s107 D:/QUARTUS/Stopwatch/BCD_Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/Stopwatch|D:/QUARTUS/Stopwatch/BCD_Counter.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+D:/QUARTUS/Stopwatch
+Z9 tCvgOpt 0
+n@b@c@d_@counter
+vBCD_Decoder
+Z10 !s110 1669818945
+!i10b 1
+!s100 RiH4Toj?ojgiVc@2FZ4SI0
+R2
+I2Y^neRS=?=UMZj=B:X8IC2
+R3
+R0
+w1669818402
+8D:/QUARTUS/Stopwatch/BCD_Decoder.v
+FD:/QUARTUS/Stopwatch/BCD_Decoder.v
+!i122 2
+L0 4 29
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/QUARTUS/Stopwatch/BCD_Decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/Stopwatch|D:/QUARTUS/Stopwatch/BCD_Decoder.v|
+!i113 1
+R7
+R8
+R9
+n@b@c@d_@decoder
+vStopwatch
+R1
+!i10b 1
+!s100 oOel>CZo1EMO<IdD=65P@0
+R2
+I`kH0^Cz_G>bKk<cT=fAQU0
+R3
+R0
+w1669817946
+8D:/QUARTUS/Stopwatch/Stopwatch.v
+FD:/QUARTUS/Stopwatch/Stopwatch.v
+!i122 0
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/QUARTUS/Stopwatch/Stopwatch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/Stopwatch|D:/QUARTUS/Stopwatch/Stopwatch.v|
+!i113 1
+R7
+R8
+R9
+n@stopwatch
+vtb_Stopwatch
+R10
+!i10b 1
+!s100 >1W]LIA9439`XXn433f8S1
+R2
+IS;Q@;I[6CV??6ZYiDSHXl3
+R3
+R0
+w1669818916
+8D:/QUARTUS/Stopwatch/tb_Stopwatch.v
+FD:/QUARTUS/Stopwatch/tb_Stopwatch.v
+!i122 3
+L0 5 40
+R5
+r1
+!s85 0
+31
+!s108 1669818945.000000
+!s107 D:/QUARTUS/Stopwatch/tb_Stopwatch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/Stopwatch|D:/QUARTUS/Stopwatch/tb_Stopwatch.v|
+!i113 1
+R7
+R8
+R9
+ntb_@stopwatch

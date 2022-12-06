@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS/RegisterSet_n-Bit/simulation/modelsim
+vRegisterSet_nBit
+Z1 !s110 1669124934
+!i10b 1
+!s100 CCUSIG_60ABN4`M?U2gjc0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I2G5]Go9=J]]1E;R4oa5o@2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1669124846
+8D:/QUARTUS/RegisterSet_n-Bit/RegisterSet_nBit.v
+FD:/QUARTUS/RegisterSet_n-Bit/RegisterSet_nBit.v
+!i122 0
+L0 4 70
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1669124934.000000
+!s107 D:/QUARTUS/RegisterSet_n-Bit/RegisterSet_nBit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/RegisterSet_n-Bit|D:/QUARTUS/RegisterSet_n-Bit/RegisterSet_nBit.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+D:/QUARTUS/RegisterSet_n-Bit
+Z8 tCvgOpt 0
+n@register@set_n@bit
+vtb_RegisterSet_Nbit
+R1
+!i10b 1
+!s100 El[jenBE]V>kZ<EcZW3bX3
+R2
+Iifi?;ATK@]7Jbem;N=Df60
+R3
+R0
+w1669124893
+8D:/QUARTUS/RegisterSet_n-Bit/tb_RegisterSet_Nbit.v
+FD:/QUARTUS/RegisterSet_n-Bit/tb_RegisterSet_Nbit.v
+!i122 1
+L0 2 58
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/QUARTUS/RegisterSet_n-Bit/tb_RegisterSet_Nbit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/RegisterSet_n-Bit|D:/QUARTUS/RegisterSet_n-Bit/tb_RegisterSet_Nbit.v|
+!i113 1
+R6
+R7
+R8
+ntb_@register@set_@nbit

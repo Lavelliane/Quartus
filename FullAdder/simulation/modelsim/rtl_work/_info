@@ -1,0 +1,86 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS/FullAdder/simulation/modelsim
+vFullAdder
+Z1 !s110 1663640224
+!i10b 1
+!s100 0`HI?Q<_=8HKMbSMmOG_f1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Id>2;W`g37XCS3BiT2^d3G2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1663585334
+8D:/QUARTUS/FullAdder/FullAdder.v
+FD:/QUARTUS/FullAdder/FullAdder.v
+!i122 1
+L0 8 12
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1663640224.000000
+!s107 D:/QUARTUS/FullAdder/FullAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/FullAdder|D:/QUARTUS/FullAdder/FullAdder.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+D:/QUARTUS/FullAdder
+Z8 tCvgOpt 0
+n@full@adder
+vHalfAdder
+!s110 1663640223
+!i10b 1
+!s100 OzkRFM?dodfaz0H67C5_i2
+R2
+ILDV;NA;aBzGT_E[A[b_oW0
+R3
+R0
+w1663584855
+8D:/QUARTUS/FullAdder/HalfAdder.v
+FD:/QUARTUS/FullAdder/HalfAdder.v
+!i122 0
+L0 8 9
+R4
+r1
+!s85 0
+31
+!s108 1663640223.000000
+!s107 D:/QUARTUS/FullAdder/HalfAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/FullAdder|D:/QUARTUS/FullAdder/HalfAdder.v|
+!i113 1
+R6
+R7
+R8
+n@half@adder
+vtb_FullAdder
+R1
+!i10b 1
+!s100 ZcLiAXK706_1GWcONB`B=1
+R2
+IP_^3D_KS8=b@AEL5FcSYR1
+R3
+R0
+w1663600177
+8D:/QUARTUS/FullAdder/tb_FullAdder.v
+FD:/QUARTUS/FullAdder/tb_FullAdder.v
+!i122 2
+L0 3 22
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/QUARTUS/FullAdder/tb_FullAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/FullAdder|D:/QUARTUS/FullAdder/tb_FullAdder.v|
+!i113 1
+R6
+R7
+R8
+ntb_@full@adder

@@ -1,0 +1,25 @@
+module Mode_Select 
+	#(parameter N = 4)	
+(
+	input wire [N-1:0] 	r1,r2,
+	input wire				CB_in, Selector, cb1, cb2,
+	output reg [N-1:0]	Result,
+	output reg				CB_out
+);
+
+	always @(*) 
+		begin
+			if(Selector) 
+				begin
+					Result = r2;
+					CB_out = cb2;
+				end
+			
+			else 
+				begin
+					Result = r1;
+					CB_out = cb1;
+				end
+		end
+		
+endmodule 

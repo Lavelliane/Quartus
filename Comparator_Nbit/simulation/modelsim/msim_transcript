@@ -1,0 +1,63 @@
+# Reading pref.tcl
+# do Comparator_Nbit_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/Comparator_Nbit {D:/QUARTUS/Comparator_Nbit/Comparator_Nbit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:03:03 on Oct 11,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/Comparator_Nbit" D:/QUARTUS/Comparator_Nbit/Comparator_Nbit.v 
+# -- Compiling module Comparator_Nbit
+# 
+# Top level modules:
+# 	Comparator_Nbit
+# End time: 01:03:03 on Oct 11,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/Comparator_Nbit {D:/QUARTUS/Comparator_Nbit/tb_Comparator_Nbit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:03:03 on Oct 11,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/Comparator_Nbit" D:/QUARTUS/Comparator_Nbit/tb_Comparator_Nbit.v 
+# -- Compiling module tb_Comparator_Nbit
+# 
+# Top level modules:
+# 	tb_Comparator_Nbit
+# End time: 01:03:03 on Oct 11,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_Comparator_Nbit
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_Comparator_Nbit 
+# Start time: 01:03:03 on Oct 11,2022
+# Loading work.tb_Comparator_Nbit
+# Loading work.Comparator_Nbit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting simulation at 0 ns...
+# Time =  0 ns	 A =  0	 B =  0	 R = 010
+# Time = 10 ns	 A =  3	 B = 14	 R = 100
+# Time = 20 ns	 A =  8	 B =  8	 R = 010
+# Time = 30 ns	 A = 11	 B =  9	 R = 001
+# Time = 40 ns	 A = 15	 B =  7	 R = 001
+# Time = 50 ns	 A =  6	 B =  1	 R = 001
+# Time = 60 ns	 A =  3	 B =  3	 R = 010
+# Time = 70 ns	 A =  5	 B = 10	 R = 100
+# Time = 80 ns	 A =  4	 B =  2	 R = 001
+# Time = 90 ns	 A =  0	 B =  1	 R = 100
+# Finished simulation at 100 ns...
+# ** Note: $stop    : D:/QUARTUS/Comparator_Nbit/tb_Comparator_Nbit.v(28)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_Comparator_Nbit
+# Break in Module tb_Comparator_Nbit at D:/QUARTUS/Comparator_Nbit/tb_Comparator_Nbit.v line 28
+# End time: 01:03:48 on Oct 11,2022, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 0

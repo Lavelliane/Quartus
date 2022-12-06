@@ -1,0 +1,69 @@
+# Reading pref.tcl
+# do EvenParityGenerator_3bit_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/EvenParityGenerator_3bit {D:/QUARTUS/EvenParityGenerator_3bit/EvenParityGenerator_3bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:56:00 on Oct 11,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/EvenParityGenerator_3bit" D:/QUARTUS/EvenParityGenerator_3bit/EvenParityGenerator_3bit.v 
+# -- Compiling module EvenParityGenerator_3bit
+# 
+# Top level modules:
+# 	EvenParityGenerator_3bit
+# End time: 00:56:00 on Oct 11,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/EvenParityGenerator_3bit {D:/QUARTUS/EvenParityGenerator_3bit/tb_EvenParityGen_3bit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:56:00 on Oct 11,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/EvenParityGenerator_3bit" D:/QUARTUS/EvenParityGenerator_3bit/tb_EvenParityGen_3bit.v 
+# -- Compiling module tb_EvenParityGen_3bit
+# 
+# Top level modules:
+# 	tb_EvenParityGen_3bit
+# End time: 00:56:00 on Oct 11,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_EvenParityGen_3bit
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_EvenParityGen_3bit 
+# Start time: 00:56:01 on Oct 11,2022
+# Loading work.tb_EvenParityGen_3bit
+# Loading work.EvenParityGenerator_3bit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting simulation at 0 ns...
+# Time =  0 ns	 E = 0	 A = 000	 P = z
+# Time = 10 ns	 E = 0	 A = 001	 P = z
+# Time = 20 ns	 E = 0	 A = 010	 P = z
+# Time = 30 ns	 E = 0	 A = 011	 P = z
+# Time = 40 ns	 E = 0	 A = 100	 P = z
+# Time = 50 ns	 E = 0	 A = 101	 P = z
+# Time = 60 ns	 E = 0	 A = 110	 P = z
+# Time = 70 ns	 E = 0	 A = 111	 P = z
+# Time = 80 ns	 E = 1	 A = 000	 P = 0
+# Time = 90 ns	 E = 1	 A = 001	 P = 1
+# Time = 100 ns	 E = 1	 A = 010	 P = 1
+# Time = 110 ns	 E = 1	 A = 011	 P = 0
+# Time = 120 ns	 E = 1	 A = 100	 P = 1
+# Time = 130 ns	 E = 1	 A = 101	 P = 0
+# Time = 140 ns	 E = 1	 A = 110	 P = 0
+# Time = 150 ns	 E = 1	 A = 111	 P = 1
+# Finished simulation at 160 ns...
+# ** Note: $stop    : D:/QUARTUS/EvenParityGenerator_3bit/tb_EvenParityGen_3bit.v(35)
+#    Time: 160 ns  Iteration: 0  Instance: /tb_EvenParityGen_3bit
+# Break in Module tb_EvenParityGen_3bit at D:/QUARTUS/EvenParityGenerator_3bit/tb_EvenParityGen_3bit.v line 35
+# End time: 00:58:17 on Oct 11,2022, Elapsed time: 0:02:16
+# Errors: 0, Warnings: 0

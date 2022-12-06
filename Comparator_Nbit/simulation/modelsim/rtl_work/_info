@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS/Comparator_Nbit/simulation/modelsim
+vComparator_Nbit
+Z1 !s110 1665421383
+!i10b 1
+!s100 WN]E7H:f4fHflIGimQaDj2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ioaf?7?Eb=ge7D:jjH?F252
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1665421363
+8D:/QUARTUS/Comparator_Nbit/Comparator_Nbit.v
+FD:/QUARTUS/Comparator_Nbit/Comparator_Nbit.v
+!i122 0
+L0 4 14
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1665421383.000000
+!s107 D:/QUARTUS/Comparator_Nbit/Comparator_Nbit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/Comparator_Nbit|D:/QUARTUS/Comparator_Nbit/Comparator_Nbit.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+D:/QUARTUS/Comparator_Nbit
+Z8 tCvgOpt 0
+n@comparator_@nbit
+vtb_Comparator_Nbit
+R1
+!i10b 1
+!s100 0QTB5?Q;iEAVGzkgjXl7I0
+R2
+I[:c<[Y>I9=`;e[Bd?AX5^2
+R3
+R0
+w1665421199
+8D:/QUARTUS/Comparator_Nbit/tb_Comparator_Nbit.v
+FD:/QUARTUS/Comparator_Nbit/tb_Comparator_Nbit.v
+!i122 1
+L0 5 31
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/QUARTUS/Comparator_Nbit/tb_Comparator_Nbit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/Comparator_Nbit|D:/QUARTUS/Comparator_Nbit/tb_Comparator_Nbit.v|
+!i113 1
+R6
+R7
+R8
+ntb_@comparator_@nbit

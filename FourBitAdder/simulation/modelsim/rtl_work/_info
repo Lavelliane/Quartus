@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS/FourBitAdder/simulation/modelsim
+vFourBitAdder
+!s110 1663609544
+!i10b 1
+!s100 ]8;cO5lARADn<=9Ae>0PW0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IoN3CjJ^kOoTabFNJ^3geY1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1663609244
+8D:/QUARTUS/FourBitAdder/FourBitAdder.v
+FD:/QUARTUS/FourBitAdder/FourBitAdder.v
+!i122 0
+L0 8 18
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1663609544.000000
+!s107 D:/QUARTUS/FourBitAdder/FourBitAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/FourBitAdder|D:/QUARTUS/FourBitAdder/FourBitAdder.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+D:/QUARTUS/FourBitAdder
+Z6 tCvgOpt 0
+n@four@bit@adder
+vFullAdder
+Z7 !s110 1663609545
+!i10b 1
+!s100 ZC2^_eAE;@E^feLeO<V=V0
+R1
+I7Q2h8do^CdeFMKe`?bdLB1
+R2
+R0
+w1663609447
+8D:/QUARTUS/FourBitAdder/FullAdder.v
+FD:/QUARTUS/FourBitAdder/FullAdder.v
+!i122 2
+L0 8 12
+R3
+r1
+!s85 0
+31
+Z8 !s108 1663609545.000000
+!s107 D:/QUARTUS/FourBitAdder/FullAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/FourBitAdder|D:/QUARTUS/FourBitAdder/FullAdder.v|
+!i113 1
+R4
+R5
+R6
+n@full@adder
+vHalfAdder
+R7
+!i10b 1
+!s100 OzkRFM?dodfaz0H67C5_i2
+R1
+I61N^1j?BBfbLZkTYoUh1W1
+R2
+R0
+w1663604488
+8D:/QUARTUS/FourBitAdder/HalfAdder.v
+FD:/QUARTUS/FourBitAdder/HalfAdder.v
+!i122 1
+L0 8 9
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/QUARTUS/FourBitAdder/HalfAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/FourBitAdder|D:/QUARTUS/FourBitAdder/HalfAdder.v|
+!i113 1
+R4
+R5
+R6
+n@half@adder
+vtb_FourBitAdder
+R7
+!i10b 1
+!s100 PNXf]NRj5B@f_BQ>RFR;_3
+R1
+I@gTSf<M>32LMgJ?QlKZ];3
+R2
+R0
+w1663609461
+8D:/QUARTUS/FourBitAdder/tb_FourBitAdder.v
+FD:/QUARTUS/FourBitAdder/tb_FourBitAdder.v
+!i122 3
+L0 9 24
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/QUARTUS/FourBitAdder/tb_FourBitAdder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/FourBitAdder|D:/QUARTUS/FourBitAdder/tb_FourBitAdder.v|
+!i113 1
+R4
+R5
+R6
+ntb_@four@bit@adder

@@ -1,0 +1,77 @@
+# Reading pref.tcl
+# do ALU_Nbit_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/ALU_Nbit {D:/QUARTUS/ALU_Nbit/ALU_Nbit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:38:57 on Oct 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/ALU_Nbit" D:/QUARTUS/ALU_Nbit/ALU_Nbit.v 
+# -- Compiling module ALU_Nbit
+# 
+# Top level modules:
+# 	ALU_Nbit
+# End time: 21:38:57 on Oct 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/ALU_Nbit {D:/QUARTUS/ALU_Nbit/tb_ALU_Nbit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:38:57 on Oct 25,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/ALU_Nbit" D:/QUARTUS/ALU_Nbit/tb_ALU_Nbit.v 
+# -- Compiling module tb_ALU_Nbit
+# 
+# Top level modules:
+# 	tb_ALU_Nbit
+# End time: 21:38:58 on Oct 25,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_ALU_Nbit
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_ALU_Nbit 
+# Start time: 21:38:58 on Oct 25,2022
+# Loading work.tb_ALU_Nbit
+# Loading work.ALU_Nbit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting simulation at 0 ns...
+# Time =  0 ns	 mode = 0	 CB_in = 1	 A = 101	 B = 010	 res = 000	 CB_out = 1
+# Time = 10 ns	 mode = 0	 CB_in = 1	 A = 100	 B = 011	 res = 000	 CB_out = 1
+# Time = 20 ns	 mode = 0	 CB_in = 1	 A = 001	 B = 001	 res = 011	 CB_out = 0
+# Time = 30 ns	 mode = 1	 CB_in = 1	 A = 100	 B = 010	 res = 011	 CB_out = 0
+# Time = 40 ns	 mode = 1	 CB_in = 1	 A = 101	 B = 000	 res = 110	 CB_out = 0
+# Time = 50 ns	 mode = 1	 CB_in = 1	 A = 010	 B = 001	 res = 010	 CB_out = 0
+# Time = 60 ns	 mode = 2	 CB_in = 0	 A = 101	 B = 100	 res = 100	 CB_out = 0
+# Time = 70 ns	 mode = 2	 CB_in = 0	 A = 101	 B = 111	 res = 101	 CB_out = 0
+# Time = 80 ns	 mode = 2	 CB_in = 0	 A = 000	 B = 111	 res = 000	 CB_out = 0
+# Time = 90 ns	 mode = 3	 CB_in = 0	 A = 101	 B = 000	 res = 101	 CB_out = 0
+# Time = 100 ns	 mode = 3	 CB_in = 0	 A = 101	 B = 111	 res = 111	 CB_out = 0
+# Time = 110 ns	 mode = 3	 CB_in = 0	 A = 000	 B = 111	 res = 111	 CB_out = 0
+# Time = 120 ns	 mode = 4	 CB_in = 0	 A = 101	 B = 011	 res = 110	 CB_out = 0
+# Time = 130 ns	 mode = 4	 CB_in = 0	 A = 010	 B = 000	 res = 010	 CB_out = 0
+# Time = 140 ns	 mode = 4	 CB_in = 0	 A = 100	 B = 011	 res = 111	 CB_out = 0
+# Time = 150 ns	 mode = 5	 CB_in = 0	 A = 101	 B = 000	 res = 010	 CB_out = 0
+# Time = 160 ns	 mode = 5	 CB_in = 0	 A = 111	 B = 000	 res = 000	 CB_out = 0
+# Time = 170 ns	 mode = 5	 CB_in = 0	 A = 000	 B = 000	 res = 111	 CB_out = 0
+# Time = 180 ns	 mode = 6	 CB_in = 0	 A = 011	 B = 000	 res = 100	 CB_out = 0
+# Time = 190 ns	 mode = 6	 CB_in = 0	 A = 001	 B = 000	 res = 010	 CB_out = 0
+# Time = 200 ns	 mode = 6	 CB_in = 0	 A = 010	 B = 000	 res = 011	 CB_out = 0
+# Time = 210 ns	 mode = 7	 CB_in = 0	 A = 110	 B = 000	 res = 101	 CB_out = 0
+# Time = 220 ns	 mode = 7	 CB_in = 0	 A = 111	 B = 000	 res = 110	 CB_out = 0
+# Time = 230 ns	 mode = 7	 CB_in = 0	 A = 100	 B = 000	 res = 011	 CB_out = 0
+# Finished simulation at 240 ns...
+# ** Note: $stop    : D:/QUARTUS/ALU_Nbit/tb_ALU_Nbit.v(59)
+#    Time: 240 ns  Iteration: 0  Instance: /tb_ALU_Nbit
+# Break in Module tb_ALU_Nbit at D:/QUARTUS/ALU_Nbit/tb_ALU_Nbit.v line 59
+# End time: 21:49:50 on Oct 25,2022, Elapsed time: 0:10:52
+# Errors: 0, Warnings: 0

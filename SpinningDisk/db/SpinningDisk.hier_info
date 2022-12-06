@@ -1,0 +1,44 @@
+|SpinningDisk
+Clk => Clk.IN1
+nReset => nReset.IN1
+Start => Start.IN1
+SSeg[0] <= Seven_Seg:S1.sseg
+SSeg[1] <= Seven_Seg:S1.sseg
+SSeg[2] <= Seven_Seg:S1.sseg
+SSeg[3] <= Seven_Seg:S1.sseg
+SSeg[4] <= Seven_Seg:S1.sseg
+SSeg[5] <= Seven_Seg:S1.sseg
+SSeg[6] <= Seven_Seg:S1.sseg
+SSeg[7] <= Seven_Seg:S1.sseg
+
+
+|SpinningDisk|Counter_3bit:C1
+cnt[0] <= cnt[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[1] <= cnt[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[2] <= cnt[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => cnt[0]~reg0.CLK
+clk => cnt[1]~reg0.CLK
+clk => cnt[2]~reg0.CLK
+rst => cnt[0]~reg0.ACLR
+rst => cnt[1]~reg0.ACLR
+rst => cnt[2]~reg0.ACLR
+Start => cnt.OUTPUTSELECT
+Start => cnt.OUTPUTSELECT
+Start => cnt.OUTPUTSELECT
+
+
+|SpinningDisk|Seven_Seg:S1
+bin[0] => Decoder0.IN2
+bin[1] => Decoder0.IN1
+bin[2] => Decoder0.IN0
+dp => sseg[0].DATAIN
+sseg[0] <= dp.DB_MAX_OUTPUT_PORT_TYPE
+sseg[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+sseg[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+sseg[3] <= sseg.DB_MAX_OUTPUT_PORT_TYPE
+sseg[4] <= sseg.DB_MAX_OUTPUT_PORT_TYPE
+sseg[5] <= sseg.DB_MAX_OUTPUT_PORT_TYPE
+sseg[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+sseg[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

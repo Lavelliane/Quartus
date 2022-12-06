@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS/ALU_Nbit/simulation/modelsim
+vALU_Nbit
+!s110 1666705137
+!i10b 1
+!s100 A1QXR;>BRVfbOAiU@OOfK0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I`9GoUZ6^81U0;i?K8[SFj0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1666097614
+8D:/QUARTUS/ALU_Nbit/ALU_Nbit.v
+FD:/QUARTUS/ALU_Nbit/ALU_Nbit.v
+!i122 0
+L0 1 32
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1666705137.000000
+!s107 D:/QUARTUS/ALU_Nbit/ALU_Nbit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/ALU_Nbit|D:/QUARTUS/ALU_Nbit/ALU_Nbit.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/QUARTUS/ALU_Nbit
+Z7 tCvgOpt 0
+n@a@l@u_@nbit
+vtb_ALU_Nbit
+!s110 1666705138
+!i10b 1
+!s100 d7lDV^c_C1`IPX[iUZQ_]3
+R1
+Ik[9XNfKh?8>=a3oliW1@V3
+R2
+R0
+w1666702338
+8D:/QUARTUS/ALU_Nbit/tb_ALU_Nbit.v
+FD:/QUARTUS/ALU_Nbit/tb_ALU_Nbit.v
+!i122 1
+L0 5 63
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/QUARTUS/ALU_Nbit/tb_ALU_Nbit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/ALU_Nbit|D:/QUARTUS/ALU_Nbit/tb_ALU_Nbit.v|
+!i113 1
+R5
+R6
+R7
+ntb_@a@l@u_@nbit

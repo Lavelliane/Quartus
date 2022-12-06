@@ -1,0 +1,27 @@
+//Verilog HDL code for Comparator
+//Author: Jhury Kevin Lastre
+
+module Comparator_4bit_Be
+	#(parameter N = 4)
+(
+	input wire [N-1:0] A, B,
+	output reg [2:0] R
+);
+
+	//010	= EQUAL
+	//001 = A > B
+	//100 = A < B
+	
+	always@(*)
+	begin
+		if(A > B)
+			R = 3'b001;
+		else if(A == B)
+			R = 3'b010;
+		else if(A < B)
+			R = 3'b100;
+		else
+			R = 3'b000;
+	end
+
+endmodule

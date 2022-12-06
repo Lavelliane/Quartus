@@ -1,0 +1,10 @@
+|Problem3
+A => G1.IN0
+A => G3.IN0
+B => G1.IN1
+B => G2.IN0
+C => G2.IN1
+C => G3.IN1
+E << G4.DB_MAX_OUTPUT_PORT_TYPE
+
+

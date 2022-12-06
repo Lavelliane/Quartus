@@ -1,0 +1,11 @@
+|T_FF
+clk => q_bar~reg0.CLK
+clk => q~reg0.CLK
+rstn => q.OUTPUTSELECT
+rstn => q_bar.OUTPUTSELECT
+t => q.OUTPUTSELECT
+t => q_bar.OUTPUTSELECT
+q << q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q_bar << q_bar~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

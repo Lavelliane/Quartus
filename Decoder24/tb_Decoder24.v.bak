@@ -1,0 +1,10 @@
+`timescale 1 ns/ 1 ps
+
+module tb_Decoder24();
+
+	reg [1:0] a;
+	reg en;
+	
+	wire [3:0] d;
+
+endmodule

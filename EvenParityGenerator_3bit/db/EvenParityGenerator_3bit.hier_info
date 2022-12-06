@@ -1,0 +1,8 @@
+|EvenParityGenerator_3bit
+A[0] => P.IN0
+A[1] => P.IN1
+A[2] => P.IN1
+E => P.OE
+P << P.DB_MAX_OUTPUT_PORT_TYPE
+
+

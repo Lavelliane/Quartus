@@ -1,0 +1,31 @@
+module Seven_Seg
+	#(parameter N = 3)
+(
+	input wire [N-1:0] hex
+	input wire dp
+	output reg [7:0]sseg
+);
+
+	always@(*)
+	begin
+	
+		case(hex):
+			4'h0 : sseg = {7b'1000000, dp};
+			4'h1 : sseg = {7b'1111001, dp};
+			4'h2 : sseg = {7b'0100100, dp};
+			4'h3 : sseg = {7b'0110000, dp};
+			4'h4 : sseg = {7b'0011001, dp};
+			4'h5 : sseg = {7b'0010010, dp};
+			4'h6 : sseg = {7b'0000010, dp};
+			4'h7 : sseg = {7b'1111000, dp};
+			4'h8 : sseg = {7b'0000000, dp};
+			4'h9 : sseg = {7b'0110000, dp};
+			4'ha : sseg = {7b'0001000, dp};
+			4'hb : sseg = {7b'0000011, dp};
+			4'hc : sseg = {7b'1000110, dp};
+			4'hd : sseg = {7b'0100001, dp};
+			4'he : sseg = {7b'0000110, dp};
+			4'hf : sseg = {7b'0001110, dp};
+				
+	end
+endmodule
