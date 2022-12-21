@@ -1,0 +1,11 @@
+
+State Machine - |ComplexCounter|pState
+Name pState.111 pState.110 pState.101 pState.100 pState.011 pState.010 pState.001 pState.000 
+pState.000 0 0 0 0 0 0 0 0 
+pState.001 0 0 0 0 0 0 1 1 
+pState.010 0 0 0 0 0 1 0 1 
+pState.011 0 0 0 0 1 0 0 1 
+pState.100 0 0 0 1 0 0 0 1 
+pState.101 0 0 1 0 0 0 0 1 
+pState.110 0 1 0 0 0 0 0 1 
+pState.111 1 0 0 0 0 0 0 1 

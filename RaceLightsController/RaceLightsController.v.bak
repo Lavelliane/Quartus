@@ -1,0 +1,80 @@
+
+module RaceLightsController(
+	input wire Clk, nReset, Start, 
+	output reg R, Y, G
+);
+
+// STATE ENCODING
+localparam OFF = 3'b000,
+			  SA = 3'b001,
+			  SB = 3'b010,
+			  SC = 3'b011,
+			  SD = 3'b100,
+			  SE = 3'b101,
+			  SF = 3'b110;
+
+reg [2:0] pState, nState;
+
+// STATE TRANSITION
+// negative-edge triggered CLOCK
+// active low reset, asynchronous
+
+always @(negedge Clk, negedge nReset)
+	begin
+		if(!nRESET)
+			pState <= SA;
+		else
+			pState <= nState;
+	end
+
+// NEXT STATE ASSIGNMENT
+always @(*)
+	begin
+		case (pState)
+			OFF		: nState = (!Start)  ? OFF : SA;
+			SA  		: nState = (!Start)  ? SA  : SB;
+			SB			: nState = (!nReset) ? SA  : SC;
+			SC			: nState = (!nReset) ? SA  : SD;
+			SD			: nState = (!nRESET) ? SA  : SE;
+			SE			: nState = (!nRESET) ? SA 	: SF;
+			SF			: nState = (!nRESET) ? SA 	: SA;
+			default	: nState = (!nRESET) ? SA	: pstate;
+		endcase
+	end
+	
+// OUTPUT ASSIGNMENT
+	reg red, yellow, green;
+	
+always @(*)
+	begin
+		case(pstate)
+			OFF		: begin red = (START) ? 1'b1 : 1'b0;
+								  yellow = 1'b0;
+								  green = 1'b0; end
+			SA			: begin red = 1'b1; yellow = 1'b0; green = 1'b0; end
+			SB			: begin red = 1'b1; yellow = 1'b0; green = 1'b0; end
+			SC			: begin red = 1'b0; yellow = 1'b1; green = 1'b0; end
+			SD			: begin red = 1'b0; yellow = 1'b0; green = 1'b1; end
+			SE			: begin red = 1'b0; yellow = 1'b0; green = 1'b1; end
+			SF			: begin red = 1'b0; yellow = 1'b0; green = 1'b1; end
+			default 	: begin red = 1'b1; yellow = 1'b0; green = 1'b0; end
+		endcase
+	end
+
+always @(negedge CLOCK, negedge nRESET)
+	begin
+		if(!nRESET) begin
+			RED <= 1'b1;
+			YELLOW <= 1'b0;
+			GREEN <= 1'b0;
+		end
+		else begin
+			RED <= red;
+			YELLOW <= yellow;
+			GREEN <= green;
+		end
+	end
+endmodule
+
+						
+	

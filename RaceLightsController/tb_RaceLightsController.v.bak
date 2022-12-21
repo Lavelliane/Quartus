@@ -1,0 +1,35 @@
+
+`timescale 1 s / 1 ps
+
+module tb_RaceLightsController ();
+
+reg CLOCK, nRESET, START;
+wire RED, YELLOW, GREEN;
+
+RaceLightsController UUT (.CLOCK(CLOCK), .nRESET(nRESET), .START(START), .RED(RED), .YELLOW(YELLOW), .GREEN(GREEN));
+
+initial 
+	CLOCK = 1'b0;
+	
+always
+	#1 CLOCK = ~CLOCK;
+	
+initial 
+	begin
+		nRESET = 1'b0; #2
+		nRESET = 1'b1;
+end
+
+initial 
+	begin
+		$display("Starting simulation at %0d s...", $time);
+			START = 1'b0;		#1
+			START = 1'b1;	   #15
+			nRESET = 1'b0;		#3
+			$display("Finished Simulation at %0d s...", $time);
+		$stop;
+end
+
+initial
+	$monitor("Time = %d s\t CLOCK = %b\t nRESET = %b\t START = %b\t RED = %b\t YELLOW = %b\t GREEN = %b",$time, CLOCK, nRESET, START, RED, YELLOW, GREEN);
+endmodule

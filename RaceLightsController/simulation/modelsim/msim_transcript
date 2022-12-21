@@ -1,0 +1,77 @@
+# Reading pref.tcl
+# do RaceLightsController_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/RaceLightsController {D:/QUARTUS/RaceLightsController/RaceLightsController.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:57:55 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/RaceLightsController" D:/QUARTUS/RaceLightsController/RaceLightsController.v 
+# -- Compiling module RaceLightsController
+# 
+# Top level modules:
+# 	RaceLightsController
+# End time: 20:57:55 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/RaceLightsController {D:/QUARTUS/RaceLightsController/tb_RaceLightsController.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:57:55 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/RaceLightsController" D:/QUARTUS/RaceLightsController/tb_RaceLightsController.v 
+# -- Compiling module tb_RaceLightsController
+# 
+# Top level modules:
+# 	tb_RaceLightsController
+# End time: 20:57:55 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_RaceLightsController
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_RaceLightsController 
+# Start time: 20:57:55 on Dec 12,2022
+# Loading work.tb_RaceLightsController
+# Loading work.RaceLightsController
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting simulation at 0 s...
+# Time =                    0 s	 CLOCK = 0	 nRESET = 0	 START = 0	 RED = 1	 YELLOW = 0	 GREEN = 0
+# Time =                    1 s	 CLOCK = 1	 nRESET = 0	 START = 1	 RED = 1	 YELLOW = 0	 GREEN = 0
+# Time =                    2 s	 CLOCK = 0	 nRESET = 1	 START = 1	 RED = 1	 YELLOW = 0	 GREEN = 0
+# Time =                    3 s	 CLOCK = 1	 nRESET = 1	 START = 1	 RED = 1	 YELLOW = 0	 GREEN = 0
+# Time =                    4 s	 CLOCK = 0	 nRESET = 1	 START = 1	 RED = 1	 YELLOW = 0	 GREEN = 0
+# Time =                    5 s	 CLOCK = 1	 nRESET = 1	 START = 1	 RED = 1	 YELLOW = 0	 GREEN = 0
+# Time =                    6 s	 CLOCK = 0	 nRESET = 1	 START = 1	 RED = 0	 YELLOW = 1	 GREEN = 0
+# Time =                    7 s	 CLOCK = 1	 nRESET = 1	 START = 1	 RED = 0	 YELLOW = 1	 GREEN = 0
+# Time =                    8 s	 CLOCK = 0	 nRESET = 1	 START = 1	 RED = 0	 YELLOW = 0	 GREEN = 1
+# Time =                    9 s	 CLOCK = 1	 nRESET = 1	 START = 1	 RED = 0	 YELLOW = 0	 GREEN = 1
+# Time =                   10 s	 CLOCK = 0	 nRESET = 1	 START = 1	 RED = 0	 YELLOW = 0	 GREEN = 1
+# Time =                   11 s	 CLOCK = 1	 nRESET = 1	 START = 1	 RED = 0	 YELLOW = 0	 GREEN = 1
+# Time =                   12 s	 CLOCK = 0	 nRESET = 1	 START = 1	 RED = 0	 YELLOW = 0	 GREEN = 1
+# Time =                   13 s	 CLOCK = 1	 nRESET = 1	 START = 1	 RED = 0	 YELLOW = 0	 GREEN = 1
+# Time =                   14 s	 CLOCK = 0	 nRESET = 1	 START = 1	 RED = 1	 YELLOW = 0	 GREEN = 0
+# Time =                   15 s	 CLOCK = 1	 nRESET = 1	 START = 1	 RED = 1	 YELLOW = 0	 GREEN = 0
+# Time =                   16 s	 CLOCK = 0	 nRESET = 1	 START = 1	 RED = 1	 YELLOW = 0	 GREEN = 0
+# Time =                   17 s	 CLOCK = 1	 nRESET = 1	 START = 1	 RED = 1	 YELLOW = 0	 GREEN = 0
+# Time =                   18 s	 CLOCK = 0	 nRESET = 1	 START = 1	 RED = 0	 YELLOW = 1	 GREEN = 0
+# Time =                   19 s	 CLOCK = 1	 nRESET = 1	 START = 1	 RED = 0	 YELLOW = 1	 GREEN = 0
+# Time =                   20 s	 CLOCK = 0	 nRESET = 1	 START = 1	 RED = 0	 YELLOW = 0	 GREEN = 1
+# Time =                   21 s	 CLOCK = 1	 nRESET = 0	 START = 1	 RED = 1	 YELLOW = 0	 GREEN = 0
+# Time =                   22 s	 CLOCK = 0	 nRESET = 0	 START = 1	 RED = 1	 YELLOW = 0	 GREEN = 0
+# Time =                   23 s	 CLOCK = 1	 nRESET = 0	 START = 1	 RED = 1	 YELLOW = 0	 GREEN = 0
+# Finished Simulation at 24 s...
+# ** Note: $stop    : D:/QUARTUS/RaceLightsController/tb_RaceLightsController.v(32)
+#    Time: 24 sec  Iteration: 0  Instance: /tb_RaceLightsController
+# Break in Module tb_RaceLightsController at D:/QUARTUS/RaceLightsController/tb_RaceLightsController.v line 32
+# End time: 20:59:17 on Dec 12,2022, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 0

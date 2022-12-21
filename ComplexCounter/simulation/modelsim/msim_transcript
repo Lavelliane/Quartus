@@ -1,0 +1,86 @@
+# Reading pref.tcl
+# do ComplexCounter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/ComplexCounter {D:/QUARTUS/ComplexCounter/ComplexCounter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:01:42 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/ComplexCounter" D:/QUARTUS/ComplexCounter/ComplexCounter.v 
+# -- Compiling module ComplexCounter
+# 
+# Top level modules:
+# 	ComplexCounter
+# End time: 21:01:42 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS/ComplexCounter {D:/QUARTUS/ComplexCounter/tb_ComplexCounter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:01:42 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/ComplexCounter" D:/QUARTUS/ComplexCounter/tb_ComplexCounter.v 
+# -- Compiling module tb_ComplexCounter
+# 
+# Top level modules:
+# 	tb_ComplexCounter
+# End time: 21:01:42 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  tb_ComplexCounter
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" tb_ComplexCounter 
+# Start time: 21:01:43 on Dec 12,2022
+# Loading work.tb_ComplexCounter
+# Loading work.ComplexCounter
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Starting Simulation at 0 ns...
+# Time =  0 ns 	nReset = 0 	 CLOCK = 0 	 M = 0 	 --> 	 COUNT = 000 
+# Time =  5 ns 	nReset = 0 	 CLOCK = 1 	 M = 0 	 --> 	 COUNT = 000 
+# Time = 10 ns 	nReset = 0 	 CLOCK = 0 	 M = 0 	 --> 	 COUNT = 000 
+# Time = 12 ns 	nReset = 1 	 CLOCK = 0 	 M = 0 	 --> 	 COUNT = 000 
+# Time = 15 ns 	nReset = 1 	 CLOCK = 1 	 M = 0 	 --> 	 COUNT = 000 
+# Time = 20 ns 	nReset = 1 	 CLOCK = 0 	 M = 0 	 --> 	 COUNT = 001 
+# Time = 25 ns 	nReset = 1 	 CLOCK = 1 	 M = 0 	 --> 	 COUNT = 001 
+# Time = 30 ns 	nReset = 1 	 CLOCK = 0 	 M = 0 	 --> 	 COUNT = 010 
+# Time = 35 ns 	nReset = 1 	 CLOCK = 1 	 M = 0 	 --> 	 COUNT = 010 
+# Time = 40 ns 	nReset = 1 	 CLOCK = 0 	 M = 0 	 --> 	 COUNT = 011 
+# Time = 45 ns 	nReset = 1 	 CLOCK = 1 	 M = 0 	 --> 	 COUNT = 011 
+# Time = 50 ns 	nReset = 1 	 CLOCK = 0 	 M = 1 	 --> 	 COUNT = 100 
+# Time = 55 ns 	nReset = 1 	 CLOCK = 1 	 M = 1 	 --> 	 COUNT = 100 
+# Time = 60 ns 	nReset = 1 	 CLOCK = 0 	 M = 1 	 --> 	 COUNT = 000 
+# Time = 65 ns 	nReset = 1 	 CLOCK = 1 	 M = 1 	 --> 	 COUNT = 000 
+# Time = 70 ns 	nReset = 1 	 CLOCK = 0 	 M = 1 	 --> 	 COUNT = 001 
+# Time = 75 ns 	nReset = 1 	 CLOCK = 1 	 M = 1 	 --> 	 COUNT = 001 
+# Time = 80 ns 	nReset = 1 	 CLOCK = 0 	 M = 1 	 --> 	 COUNT = 011 
+# Time = 85 ns 	nReset = 1 	 CLOCK = 1 	 M = 1 	 --> 	 COUNT = 011 
+# Time = 90 ns 	nReset = 1 	 CLOCK = 0 	 M = 1 	 --> 	 COUNT = 010 
+# Time = 95 ns 	nReset = 1 	 CLOCK = 1 	 M = 1 	 --> 	 COUNT = 010 
+# Time = 100 ns 	nReset = 1 	 CLOCK = 0 	 M = 1 	 --> 	 COUNT = 110 
+# Time = 105 ns 	nReset = 1 	 CLOCK = 1 	 M = 1 	 --> 	 COUNT = 110 
+# Time = 110 ns 	nReset = 1 	 CLOCK = 0 	 M = 1 	 --> 	 COUNT = 111 
+# Time = 115 ns 	nReset = 1 	 CLOCK = 1 	 M = 1 	 --> 	 COUNT = 111 
+# Time = 120 ns 	nReset = 1 	 CLOCK = 0 	 M = 0 	 --> 	 COUNT = 101 
+# Time = 125 ns 	nReset = 1 	 CLOCK = 1 	 M = 0 	 --> 	 COUNT = 101 
+# Time = 130 ns 	nReset = 1 	 CLOCK = 0 	 M = 0 	 --> 	 COUNT = 110 
+# Time = 135 ns 	nReset = 1 	 CLOCK = 1 	 M = 0 	 --> 	 COUNT = 110 
+# Time = 140 ns 	nReset = 1 	 CLOCK = 0 	 M = 0 	 --> 	 COUNT = 111 
+# Time = 145 ns 	nReset = 1 	 CLOCK = 1 	 M = 0 	 --> 	 COUNT = 111 
+# Time = 150 ns 	nReset = 1 	 CLOCK = 0 	 M = 0 	 --> 	 COUNT = 000 
+# Time = 155 ns 	nReset = 1 	 CLOCK = 1 	 M = 0 	 --> 	 COUNT = 000 
+# Time = 160 ns 	nReset = 1 	 CLOCK = 0 	 M = 0 	 --> 	 COUNT = 001 
+# Time = 165 ns 	nReset = 1 	 CLOCK = 1 	 M = 0 	 --> 	 COUNT = 001 
+# Finished Simulation at 170 ns...
+# ** Note: $stop    : D:/QUARTUS/ComplexCounter/tb_ComplexCounter.v(32)
+#    Time: 170 ns  Iteration: 0  Instance: /tb_ComplexCounter
+# Break in Module tb_ComplexCounter at D:/QUARTUS/ComplexCounter/tb_ComplexCounter.v line 32

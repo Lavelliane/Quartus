@@ -1,0 +1,63 @@
+module Complex_Counter
+(
+	input wire 			CLOCK, nReset, M,
+	output reg [2:0]	COUNT
+	
+);
+	
+	reg [2:0]	pstate, nstate;
+	
+	always @(negedge CLOCK) 
+		begin
+
+			if(!nReset) 
+				pstate <= 3'b000;
+				
+			else 
+				pstate <= nstate;
+				
+		end
+	
+
+	always @(*) 
+		begin
+			
+			//if mode=0
+			if(!M) 
+				begin
+					case(pstate)
+						3'b000	:		nstate = 3'b001;
+						3'b001	:		nstate = 3'b010;
+						3'b010	:		nstate = 3'b011;
+						3'b011	:		nstate = 3'b100;
+						3'b100	:		nstate = 3'b101;
+						3'b101	:		nstate = 3'b110;
+						3'b110	:		nstate = 3'b111;
+						3'b111	:		nstate = 3'b000;
+						default  :		nstate = pstate;
+					endcase
+				end
+			
+			else 
+				begin
+					case(pstate)
+						3'b000	:		nstate = 3'b001;
+						3'b001	:		nstate = 3'b011;
+						3'b011	:		nstate = 3'b010;
+						3'b010	:		nstate = 3'b110;
+						3'b110	:		nstate = 3'b111;
+						3'b111	:		nstate = 3'b101;
+						3'b101	:		nstate = 3'b100;
+						3'b100	:		nstate = 3'b000;
+						default  :		nstate = pstate;
+					endcase
+				end
+		end
+	
+	always @(*) 
+	begin
+		COUNT = pstate;
+	end
+	
+	
+endmodule 

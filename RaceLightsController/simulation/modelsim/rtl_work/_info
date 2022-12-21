@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS/RaceLightsController/simulation/modelsim
+vRaceLightsController
+Z1 !s110 1670849875
+!i10b 1
+!s100 b?fMScdRkUP8Rd@9ED5S;3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IGC;=J9?cgB6Km4FW0feJQ0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1670849396
+8D:/QUARTUS/RaceLightsController/RaceLightsController.v
+FD:/QUARTUS/RaceLightsController/RaceLightsController.v
+!i122 0
+L0 4 76
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1670849875.000000
+!s107 D:/QUARTUS/RaceLightsController/RaceLightsController.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/RaceLightsController|D:/QUARTUS/RaceLightsController/RaceLightsController.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+D:/QUARTUS/RaceLightsController
+Z8 tCvgOpt 0
+n@race@lights@controller
+vtb_RaceLightsController
+R1
+!i10b 1
+!s100 cOMjTOJ^;C6d1Bi^zN]3_2
+R2
+I6aN5Ri?`zTgVJc6ecNTh92
+R3
+R0
+w1670849819
+8D:/QUARTUS/RaceLightsController/tb_RaceLightsController.v
+FD:/QUARTUS/RaceLightsController/tb_RaceLightsController.v
+!i122 1
+L0 6 32
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/QUARTUS/RaceLightsController/tb_RaceLightsController.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/RaceLightsController|D:/QUARTUS/RaceLightsController/tb_RaceLightsController.v|
+!i113 1
+R6
+R7
+R8
+ntb_@race@lights@controller

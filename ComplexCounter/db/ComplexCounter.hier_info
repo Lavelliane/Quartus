@@ -1,0 +1,21 @@
+|ComplexCounter
+Clk => pState~1.DATAIN
+nReset => pState.OUTPUTSELECT
+nReset => pState.OUTPUTSELECT
+nReset => pState.OUTPUTSELECT
+nReset => pState.OUTPUTSELECT
+nReset => pState.OUTPUTSELECT
+nReset => pState.OUTPUTSELECT
+nReset => pState.OUTPUTSELECT
+nReset => pState.OUTPUTSELECT
+Mode => nState.000.OUTPUTSELECT
+Mode => nState.010.OUTPUTSELECT
+Mode => nState.011.OUTPUTSELECT
+Mode => nState.100.OUTPUTSELECT
+Mode => nState.101.OUTPUTSELECT
+Mode => nState.110.OUTPUTSELECT
+Count[0] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Count[1] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Count[2] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

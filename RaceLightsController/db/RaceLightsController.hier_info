@@ -1,0 +1,27 @@
+|RaceLightsController
+Clk => G~reg0.CLK
+Clk => Y~reg0.CLK
+Clk => R~reg0.CLK
+Clk => pState~1.DATAIN
+nReset => nState.SC.DATAB
+nReset => nState.SD.DATAB
+nReset => nState.SE.DATAB
+nReset => nState.SF.DATAB
+nReset => G~reg0.ACLR
+nReset => Y~reg0.ACLR
+nReset => R~reg0.PRESET
+nReset => Selector0.IN1
+nReset => Selector0.IN2
+nReset => Selector0.IN3
+nReset => Selector0.IN4
+nReset => pState~3.DATAIN
+Start => Selector0.IN6
+Start => nState.SB.DATAB
+Start => Selector1.IN4
+Start => nState.OFF.DATAB
+Start => Selector0.IN5
+R << R~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y << Y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+G << G~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

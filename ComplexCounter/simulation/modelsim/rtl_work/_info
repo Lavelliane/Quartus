@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS/ComplexCounter/simulation/modelsim
+vComplexCounter
+Z1 !s110 1670850102
+!i10b 1
+!s100 cSkdl6o9UZBBFE][2WjA33
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I2ekMR3][l`6XG]g0WXVLG0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1670847492
+8D:/QUARTUS/ComplexCounter/ComplexCounter.v
+FD:/QUARTUS/ComplexCounter/ComplexCounter.v
+!i122 0
+L0 5 62
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1670850102.000000
+!s107 D:/QUARTUS/ComplexCounter/ComplexCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/ComplexCounter|D:/QUARTUS/ComplexCounter/ComplexCounter.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+D:/QUARTUS/ComplexCounter
+Z8 tCvgOpt 0
+n@complex@counter
+vtb_ComplexCounter
+R1
+!i10b 1
+!s100 SO3iN>1YPl0PS]iU=DO7R2
+R2
+I0i:5P`@@gSFE>aXdC>:Jc3
+R3
+R0
+w1670848012
+8D:/QUARTUS/ComplexCounter/tb_ComplexCounter.v
+FD:/QUARTUS/ComplexCounter/tb_ComplexCounter.v
+!i122 1
+L0 5 36
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/QUARTUS/ComplexCounter/tb_ComplexCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/ComplexCounter|D:/QUARTUS/ComplexCounter/tb_ComplexCounter.v|
+!i113 1
+R6
+R7
+R8
+ntb_@complex@counter

@@ -1,0 +1,10 @@
+
+State Machine - |RaceLightsController|pState
+Name pState.SF pState.SE pState.SD pState.SC pState.SB pState.OFF pState.SA 
+pState.SA 0 0 0 0 0 0 0 
+pState.OFF 0 0 0 0 0 1 1 
+pState.SB 0 0 0 0 1 0 1 
+pState.SC 0 0 0 1 0 0 1 
+pState.SD 0 0 1 0 0 0 1 
+pState.SE 0 1 0 0 0 0 1 
+pState.SF 1 0 0 0 0 0 1 
